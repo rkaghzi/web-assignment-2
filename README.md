@@ -76,5 +76,5 @@ OpenWeatherMap API: An API key is required to access weather data. You can sign 
 Chatbot: 
 Answers general and weather queries.
 
-github project link: 
+github project link: https://github.com/rkaghzi/web-assignment-2
 
