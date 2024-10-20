@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Weather App</h2>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="top-section">
+                <input type="text" id="city-name" placeholder="Enter city name" />
+                <button id="get-weather">Get Weather</button>
+                <button id="convert-temp">Convert to °F</button> <!-- Button for conversion -->
+                <div class="user-profile">
+                    <img src="https://th.bing.com/th/id/OIP.vQRq27oRisHZmoVH4Nv39QHaHa?rs=1&pid=ImgDetMain" alt="profile-pic">
+                </div>
+            </div>
+
+            <!-- Weather Table to display hourly data -->
+            <section class="weather-table">
+                <h2>Weather 
+                    <select id="weather-filters">
+                        <option value="default">Select Filter</option>
+                        <option value="ascTemp">Show Temperatures in Ascending Order</option>
+                        <option value="filterRain">Filter Out Days With Rain</option>
+                        <option value="highestTemp">Show Day with Highest Temperature</option>
+                        <option value="descTemp">Show Temperatures in Descending Order</option>
+                    </select>
+                </h2>
+                <table id="weather-hourly">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Temperature</th>
+                            <th>Humidity</th>
+                            <th>Wind Speed</th>
+                            <th>Weather</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Weather data rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="table.js"></script>
+</body>
+</html>

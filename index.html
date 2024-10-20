@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Weather App</h2>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="tables.html">Tables</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <div class="top-section">
+                <input type="text" id="city-name" placeholder="Enter city name" />
+                <button id="get-weather">Get Weather</button>
+                <button id="convert-temp">Convert to °F</button>
+                <div class="user-profile">
+                    <img src="https://th.bing.com/th/id/OIP.vQRq27oRisHZmoVH4Nv39QHaHa?rs=1&pid=ImgDetMain" alt="profile-pic">
+                </div>
+            </div>
+            <section class="weather-info">
+                <div class="weather-data">
+                    <h2>Weather Data Based on City</h2>
+                    <p id="city">City: Multan</p>
+                    <p id="temp"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                    <p id="description"></p>
+                    <img id="icon" src="" alt="weather icon" />
+                </div>
+            </section>
+            <section class="charts">
+                <div class="chart">
+                    <canvas id="bar-chart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="doughnut-chart"></canvas>
+                </div>
+                <div class="chart">
+                    <canvas id="line-chart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
